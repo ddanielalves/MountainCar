@@ -85,6 +85,7 @@ class qLearning:
                 
                     # And here's our equation for a new Q value for current state and action
                     new_q = (1 - learning_rate) * current_q + learning_rate * (reward + discount * next_q_val)
+                    
                     # Update Q table with new Q value
                     q_table[state_converted + (action,)] = new_q
                     

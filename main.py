@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun May  3 15:55:18 2020
-
-@author: alves
-"""
 import gym 
 import matplotlib.pyplot as plt
 # import matplotlib.style 
@@ -30,7 +25,7 @@ def get_state(state):
 
 ql = qLearning(env, get_state, qtable_size=QTABLE_SIZE )
 
-ql.fit(8000, epsilon=0, render_every=8000)
+ql.fit(8000)
 
 env.close()
 
